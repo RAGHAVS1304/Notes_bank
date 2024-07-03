@@ -1,6 +1,6 @@
 
 const mongoose=require('mongoose');
-mongoose.set("strictQuery", false); //this was just added by me since else it was giving error
+mongoose.set("strictQuery", false); 
 const mongoURI="mongodb+srv://raghav:raghav@mycluster.usgmsla.mongodb.net/CONTACTSDATABASE";
 const connectToMongo=()=>{
     mongoose.connect(mongoURI, ()=>{
