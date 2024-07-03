@@ -1,7 +1,7 @@
 
 const mongoose=require('mongoose');
 mongoose.set("strictQuery", false); 
-const mongoURI="mongodb+srv://raghav:raghav@mycluster.usgmsla.mongodb.net/CONTACTSDATABASE";
+const mongoURI=MONGO_URL;
 const connectToMongo=()=>{
     mongoose.connect(mongoURI, ()=>{
         console.log("Connected to mongo successfully");
